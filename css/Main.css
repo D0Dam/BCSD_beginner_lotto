@@ -1,8 +1,18 @@
 @charset "utf-8";
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=number] {  /* 파이어폭스 */
+  -moz-appearance: textfield;
+}
 
 div.container {
-  width: 414px;
+  width: 450px;
   height: 727px;
 
   border: 1px solid rgb(0, 0, 0, 0.12);
@@ -24,12 +34,13 @@ div.input-container {
 }
 
 div.input-paragraph,
-.lotto-paragragh {
+#lotto-paragragh {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 
   margin-left: 16px;
+  margin-bottom: 8px;
 }
 
 .input-btn-container {
@@ -38,8 +49,8 @@ div.input-paragraph,
   margin-top: 10px;
 }
 
-input.input-placeholder {
-  width: 294px;
+input#input-placeholder {
+  width: 334px;
   height: 24px;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
@@ -71,11 +82,16 @@ input.input-placeholder {
 ul.li-container {
   padding-left: 12px;
   margin: 0;
+  height: 320px;
+  overflow-y: auto;
 }
 
 li.number-list {
-  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
 
+  list-style-type: none;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -85,6 +101,7 @@ li.number-list {
   content: "🎫";
   margin-right: 5px;
   font-size: 34px;
+  line-height: 1;
 }
 
 div.discribe {
@@ -98,20 +115,27 @@ div.discribe {
 }
 
 div.title-winning-num {
-  display: inline-block;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
-
   margin-left: 16px;
 }
 
 div.title-bonus-num {
-  display: inline-block;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  margin-left: 245px;
+  margin-right: 16px;
+}
+
+.winning-num-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.winning-num-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 div.box-container {
@@ -120,11 +144,11 @@ div.box-container {
 }
 
 div.box-bonus-container {
-  display: inline-block;
   margin-left: 60px;
+  margin-right: 17px;
 }
 
-span.box-winning-num {
+input.box-winning-num {
   display: inline-block;
   width: 34px;
   height: 36px;
@@ -141,12 +165,12 @@ div.btn-result-container {
   justify-content: center;
 }
 
-button.btn-result {
+button#btn-result {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 14px;
 
-  width: 382px;
+  width: 416px;
   height: 36px;
 
   border: none;
