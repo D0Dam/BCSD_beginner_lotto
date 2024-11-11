@@ -37,7 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0;
-  height: 727px;
+  height: 650px;
   width: 414px;
   border: solid 1px rgb(197, 205, 213);
   & > h1 {
@@ -91,6 +91,10 @@ body {
 
 .lotto-list {
   margin-top: 30px;
+  min-height: 180px;
+  /* 로또 리스트 스크롤 */
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 .lotto-list-box {
@@ -148,4 +152,19 @@ body {
   font-size: 14px;
   color: #4e5ba6;
   font-family: "Roboto", sans-serif;
+}
+
+/* 모달 */
+dialog{
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-reset{
+  padding: 9px;
+  width: 100%;
+  background-color: #4e5ba6;
+  color: white;
+  border-radius: 3px;
+  border: none;
 }

@@ -14,7 +14,7 @@
       <div class="core">
         <h1>🎱 내 번호 당첨 확인 🎱</h1>
         <div class="core-content">
-          <form>
+          <form id="buy-form">
             <div class="buy">
               <p id="buy-label">구입할 금액을 입력해주세요.</p>
               <div class="buy-bar">
@@ -24,18 +24,11 @@
             </div>
           </form>
           <div class="lotto-list">
-            <p class="lotto-list-label">총 7개를 구매하였습니다.</p>
+            <p class="lotto-list-label">총 <span id='total-num'>0</span>개를 구매하였습니다.</p>
             <ul class="lotto-list-box">
-              <li class="lotto-list-item">🎟️ 12, 28, 22, 37, 19, 23</li>
-              <li class="lotto-list-item">🎟️ 12, 28, 22, 37, 19, 23</li>
-              <li class="lotto-list-item">🎟️ 12, 28, 22, 37, 19, 23</li>
-              <li class="lotto-list-item">🎟️ 12, 28, 22, 37, 19, 23</li>
-              <li class="lotto-list-item">🎟️ 12, 28, 22, 37, 19, 23</li>
-              <li class="lotto-list-item">🎟️ 12, 28, 22, 37, 19, 23</li>
-              <li class="lotto-list-item">🎟️ 12, 28, 22, 37, 19, 23</li>
             </ul>
           </div>
-          <form>
+          <form id="inquiry-form">
             <div class="inquiry">
               <p id="inquiry-label">
                 지난 주 당첨번호 6개와 보너스 번호 1개를 입력해주세요.
@@ -63,6 +56,16 @@
         </div>
       </div>
     </div>
+    <dialog class="modal" id="result-modal">
+      <div class="modal-content">
+        <form method="dialog">
+          <h3>🏆 당첨 결과 🏆</h3>
+          <pre id="modal-results">modal text</pre>
+          <button class="btn-reset">다시 시작하기</button>
+        </form>
+      </div>
+    </dialog>
     <div class="footer">Copyright 2023. woowacourse</div>
+    <script src="fuction.js"></script>
   </body>
 </html>
