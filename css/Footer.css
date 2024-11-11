@@ -1,0 +1,22 @@
+hr.hr-line {
+  background-color: #B4B4B4;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+footer.footer-text-container {
+  display: flex;
+  justify-content: center;
+}
+
+div.footer-text {
+  margin: 0 auto;
+
+  font-size: 14px;
+  color: #4E5BA6;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+
+  margin-bottom: 25px;
+}

@@ -1,0 +1,89 @@
+.modal {
+  display: none;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal .modal_popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px 60px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.modal.on {
+  display: flex;
+}
+
+.modal-title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 33px;
+}
+
+.table-container {
+  width: 100%;
+  border-top: 1px solid #c8c8c8;
+  border-collapse: collapse;
+}
+
+.title-context,
+#accordNumber3,
+#accordNumber4,
+#accordNumber5,
+#accordNumber5_Bonus,
+#accordNumber6 {
+  border-bottom: 1px solid #c8c8c8;
+  padding: 10px;
+}
+
+.catchNum-count {
+  text-align: center;
+}
+
+.table_td {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+
+  margin-bottom: 20px;
+  padding: 12px 30px;
+  text-align: center;
+}
+
+.rate-context {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+
+  text-align: center;
+  margin: 32px 0;
+}
+
+.retry_btn_container {
+  display: flex;
+  justify-content: center;
+}
+
+.retry_btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+
+  width: 318px;
+  height: 36px;
+
+  border: none;
+  border-radius: 4px;
+
+  background-color: #4E5BA6;
+  color: white;
+}

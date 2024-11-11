@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=number] {  /* 파이어폭스 */
+  -moz-appearance: textfield;
+}
+
+div.container {
+  width: 450px;
+  height: 727px;
+
+  border: 1px solid rgb(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  margin: 0 auto;
+}
+
+p.title-check {
+  text-align: center;
+
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+div.input-container {
+  margin: 0 auto;
+}
+
+div.input-paragraph,
+#lotto-paragragh {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+.input-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+input#input-placeholder {
+  width: 334px;
+  height: 24px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+  border: 1px solid #8B8B8B;
+  border-radius: 4px;
+  
+  padding: 8px;
+
+  margin-bottom: 20px;
+}
+
+.btn-buy {
+  width: 56px;
+  height: 36px;
+
+  color: white;
+  background-color: #4E5BA6;
+  border: none;
+  border-radius: 4px;
+
+  margin-left: 16px;
+
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+ul.li-container {
+  padding-left: 12px;
+  margin: 0;
+  height: 320px;
+  overflow-y: auto;
+}
+
+li.number-list {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.number-list::before {
+  content: "🎫";
+  margin-right: 5px;
+  font-size: 34px;
+  line-height: 1;
+}
+
+div.discribe {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+
+  margin-top: 12px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+div.title-winning-num {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 16px;
+}
+
+div.title-bonus-num {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-right: 16px;
+}
+
+.winning-num-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.winning-num-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.box-container {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+div.box-bonus-container {
+  margin-left: 60px;
+  margin-right: 17px;
+}
+
+input.box-winning-num {
+  display: inline-block;
+  width: 34px;
+  height: 36px;
+
+  border: 1px solid #B4B4B4;
+  border-radius: 4px;
+
+  margin-left: 8px;
+  margin-top: 12px;
+}
+
+div.btn-result-container {
+  display: flex;
+  justify-content: center;
+}
+
+button#btn-result {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+
+  width: 416px;
+  height: 36px;
+
+  border: none;
+  border-radius: 4px;
+
+  background-color: #4E5BA6;
+  color: white;
+
+  margin-top: 25px;
+}

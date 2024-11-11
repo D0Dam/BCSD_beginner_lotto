@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="/css/Header.css">
+    <link rel="stylesheet" href="/css/Main.css">
+    <link rel="stylesheet" href="/css/Footer.css">
+    <link rel="stylesheet" href="/css/Modal.css">
+  </head>
+
+  <body>
+    <header class="header-box">
+      <div class="text-header-box">🎱 행운의 로또</div>
+    </header>
+
+    <div class="container">
+
+      <div class="title">
+        <p class="title-check">🎱 내 번호 당첨 확인 🎱</p>
+      </div>
+
+      <div class="input-container">
+        <div class="input-paragraph">구입할 금액을 입력해주세요.</div>
+        <div class="input-btn-container">
+          <input placeholder="금액" id="input-placeholder" autocomplete="off">
+          <button class="btn-buy" onclick="getContent()">구입</button>
+        </div>
+      </div>
+
+      <div class="lotto-number">
+        <div id="lotto-paragragh">ㅤ</div>
+        <ul class="li-container">
+        </ul>
+      </div>
+
+      <div class="discribe">
+        지난 주 당첨번호 6개와 보너스 번호 1개를 입력해주세요.
+      </div>
+
+      <div class="last-number">
+        
+        <div class="winning-num-title-wrapper">
+          <div class="title-winning-num">당첨 번호</div>
+          <div class="title-bonus-num">보너스 번호</div>
+        </div>
+
+        <div class="winning-num-wrapper">
+
+          <div class="box-container">
+            <input type="number" class="box-winning-num"></input>
+            <input type="number" class="box-winning-num"></input>
+            <input type="number" class="box-winning-num"></input>
+            <input type="number" class="box-winning-num"></input>
+            <input type="number" class="box-winning-num"></input>
+            <input type="number" class="box-winning-num"></input>
+          </div>
+  
+          <div class="box-bonus-container">
+            <input class="box-winning-num"></input>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class="modal">
+        <div class="modal_popup">
+          <h2 class="modal-title">🏆️당첨 통계🏆️</h2>
+
+          <table class="table-container">
+            <tr class="table-title">
+              <th class="title-context">일치 갯수</th>
+              <th class="title-context">당첨금</th>
+              <th class="title-context">당첨 갯수</th>
+            </tr>
+
+            <tr id="accordNumber3">
+              <td class="table_td">3개</td>
+              <td class="table_td">5,000</td>
+            </tr>
+
+            <tr id="accordNumber4">
+              <td class="table_td">4개</td>
+              <td class="table_td">50,000</td>
+            </tr>
+
+            <tr id="accordNumber5">
+              <td class="table_td">5개</td>
+              <td class="table_td">1,500,000</td>
+            </tr>
+
+            <tr id="accordNumber5_Bonus">
+              <td class="table_td">5개+보너스볼</td>
+              <td class="table_td">30,000,000</td>
+            </tr>
+
+            <tr id="accordNumber6">
+              <td class="table_td">6개</td>
+              <td class="table_td">2,000,000,000</td>
+            </tr>
+          </table>
+
+          <div id="rate">
+            <!-- 수익률 넣는 div -->
+          </div>
+
+          <div class="retry_btn_container">
+            <button class="retry_btn" onclick="closeModal()">다시 시작하기</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="btn-result-container">
+        <button id="btn-result" onclick="openModal()">결과 확인하기</button>
+      </div>
+    </div>
+
+    <hr class="hr-line" />
+
+    <footer class="footer-text-container">
+      <div class="footer-text">
+        Copyright 2023. woowacourse
+      </div>
+    </footer>
+
+    <script type="module" src="./function//buyLotto.js"></script>
+    <script type="module" src="./function/resultButton.js"></script>
+  </body>
+</html>
