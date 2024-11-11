@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  height: 6%;
+  background-color: #4e5ba6;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 9%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 76px;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.core {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 650px;
+  width: 414px;
+  border: solid 1px rgb(197, 205, 213);
+  & > h1 {
+    margin: 0;
+    width: 90%;
+    padding: 52px 16px 28px 16px;
+    text-align: center;
+  }
+}
+
+.core-content {
+  margin: 0 16px 32px 16px;
+}
+
+.buy {
+  width: 100%;
+}
+
+.buy-bar {
+  display: flex;
+  align-items: center;
+}
+
+.buy-bar input[type="number"]::-webkit-outer-spin-button,
+.buy-bar input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#buy-input {
+  width: 310px;
+  padding: 7px;
+  margin-right: 16px;
+  font-size: 15px;
+}
+
+#buy-btn {
+  background-color: #4e5ba6;
+  color: white;
+  width: 56px;
+  height: 36px;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  border: none;
+}
+
+#buy-label {
+  margin: 8px 0 8px 0;
+}
+
+.lotto-list {
+  margin-top: 30px;
+  min-height: 180px;
+  /* 로또 리스트 스크롤 */
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.lotto-list-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style-type: none;
+}
+
+.inquiry-input-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#inquiry-label {
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+.inquiry-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inquiry-input input[type="number"]::-webkit-outer-spin-button,
+.inquiry-input input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.inquiry-input input {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#check {
+  margin-top: 35px;
+  padding: 9px;
+  width: 100%;
+  background-color: #4e5ba6;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7.5%;
+  border-top: solid 1px #b4b4b4;
+  font-size: 14px;
+  color: #4e5ba6;
+  font-family: "Roboto", sans-serif;
+}
+
+/* 모달 */
+dialog{
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-reset{
+  padding: 9px;
+  width: 100%;
+  background-color: #4e5ba6;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}

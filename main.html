@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lotto</title>
+  </head>
+  <body>
+    <div class="header">
+      <p class="header-title">🎱 000 로또</p>
+    </div>
+    <div class="main">
+      <div class="core">
+        <h1>🎱 내 번호 당첨 확인 🎱</h1>
+        <div class="core-content">
+          <form id="buy-form">
+            <div class="buy">
+              <p id="buy-label">구입할 금액을 입력해주세요.</p>
+              <div class="buy-bar">
+                <input type="number" placeholder="금액" id="buy-input" />
+                <button id="buy-btn" type="submit">구입</button>
+              </div>
+            </div>
+          </form>
+          <div class="lotto-list">
+            <p class="lotto-list-label">총 <span id='total-num'>0</span>개를 구매하였습니다.</p>
+            <ul class="lotto-list-box">
+            </ul>
+          </div>
+          <form id="inquiry-form">
+            <div class="inquiry">
+              <p id="inquiry-label">
+                지난 주 당첨번호 6개와 보너스 번호 1개를 입력해주세요.
+              </p>
+              <div class="inquiry-input-name">
+                <p>당첨 번호</p>
+                <p>보너스 번호</p>
+              </div>
+              <div class="inquiry-input">
+                <div class="inquiry-input-winning">
+                  <input type="number" />
+                  <input type="number" />
+                  <input type="number" />
+                  <input type="number" />
+                  <input type="number" />
+                  <input type="number" />
+                </div>
+                <div class="inquiry-input-bonus">
+                  <input type="number" />
+                </div>
+              </div>
+            </div>
+            <button id="check" type="submit">결과 확인하기</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <dialog class="modal" id="result-modal">
+      <div class="modal-content">
+        <form method="dialog">
+          <h3>🏆 당첨 결과 🏆</h3>
+          <pre id="modal-results">modal text</pre>
+          <button class="btn-reset">다시 시작하기</button>
+        </form>
+      </div>
+    </dialog>
+    <div class="footer">Copyright 2023. woowacourse</div>
+    <script src="fuction.js"></script>
+  </body>
+</html>
